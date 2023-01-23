@@ -16,11 +16,11 @@
   set_time_limit(30);
   $DevEnvironment = getenv("DEVENV");
   $ROOTPATH = "/";
-  $HeadImg  ="img/PHPDemoBanner.png";
+  $HeadImg  ="ShareASecret.png";
   $CSSName  = "SiteStyle.css";
   $ErrMsg   = "We seem to be experiencing some technical difficulties, " .
             "hopefully we'll have it resolved shortly.<br>" .
-            "If you have any questions please contact us at support@example.com.";
+            "If you have any questions please contact us at support@supergeek.us";
 
   # All Environment and secret vars are specified in ExtVars.php
   # Follow instruction there on how to adjust.

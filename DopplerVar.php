@@ -20,15 +20,6 @@
     $DefaultDB = $arrSecretValues["secrets"]["MYSQL_DB"]["computed"];
     $UID = $arrSecretValues["secrets"]["MYSQL_USER"]["computed"];
     $PWD = $arrSecretValues["secrets"]["MYSQL_PASSWORD"]["computed"];
-    $MailUser = $arrSecretValues["secrets"]["EMAILUSER"]["computed"];
-    $MailPWD = $arrSecretValues["secrets"]["EMAILPWD"]["computed"];
-    $MailHost = $arrSecretValues["secrets"]["EMAILSERVER"]["computed"];
-    $MailHostPort = $arrSecretValues["secrets"]["EMAILPORT"]["computed"];
-    $UseSSL = $arrSecretValues["secrets"]["USESSL"]["computed"];
-    $UseStartTLS = $arrSecretValues["secrets"]["USESTARTTLS"]["computed"];
-    $TwilioToken = $arrSecretValues["secrets"]["TWILIO_KEY"]["computed"];
-    $FromNumber = $arrSecretValues["secrets"]["TWILIO_NUM"]["computed"];
-    $TwilioSID = $arrSecretValues["secrets"]["TWILIO_SID"]["computed"];
   }
   else
   {
