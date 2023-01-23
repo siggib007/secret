@@ -31,18 +31,14 @@
     $strKey = PasswordGen(35);
     $strInterval = "+" . $iExpiration . " days";
     $strExpDate = date("Y-m-d",strtotime($strInterval));
-    printPg("$strSecret expires after $iExpiration days on $strExpDate.","note");
     $strEncrypted = StringEncrypt($strSecret,$strKey);
-    $strDecrypted = StringDecrypt($strEncrypted,$strKey);
-    printPg("Decrypted: $strDecrypted","center");
     $strGUID = guid();
-    printPg("GUID: $strGUID","note");
     $strQuery = "INSERT INTO tblSecrets (vcGUID, vcSecret, dtExpiration) VALUES ('$strGUID', '$strEncrypted', '$strExpDate');";
-    printPg("Page: $strPageURL");
     $strFetchURL = $strProto . $strHost . "/fetch.php?id=$strGUID&pwd=$strKey";
     if (UpdateSQL($strQuery,"insert"))
     {
-      printPg("Your secret has be stored securely. It can be fetch exactly one time before $strExpDate at $strFetchURL","note");
+      printPg("Your secret has be stored securely. It can be fetch exactly one time before $strExpDate at","note");
+      printPg("$strFetchURL","center");
       printPg("After that date or after it has been viewed one time, it will be permanently deleted","note");
     }
     else
