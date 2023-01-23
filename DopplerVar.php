@@ -20,6 +20,7 @@
     $DefaultDB = $arrSecretValues["secrets"]["MYSQL_DB"]["computed"];
     $UID = $arrSecretValues["secrets"]["MYSQL_USER"]["computed"];
     $PWD = $arrSecretValues["secrets"]["MYSQL_PASSWORD"]["computed"];
+    $strEncrIV = $arrSecretValues["secrets"]["ENCR_IV"]["computed"];
   }
   else
   {

@@ -28,7 +28,15 @@
 	}
   if(isset($_POST["btnSubmit"]))
   {
-    printPg("$strSecret expires after $iExpiration days","note");
+    $strKey = PasswordGen(35);
+    $strInterval = "+" . $iExpiration . " days";
+    $strExpDate = date("Y-m-d",strtotime($strInterval));
+    printPg("$strSecret expires after $iExpiration days on $strExpDate.","note");
+    $strEncrypted = StringEncrypt($strSecret,$strKey);
+    $strDecrypted = StringDecrypt($strEncrypted,$strKey);
+    printPg("Decrypted: $strDecrypted","center");
+    $strGUID = guid();
+    printPg("GUID: $strGUID","note");
   }
   else
   {
