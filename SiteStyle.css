@@ -1,0 +1,752 @@
+#top, #bottom, #left, #right
+{
+    background: gray;
+    position: fixed;
+}
+
+#left, #right
+{
+    top: 0; bottom: 0;
+    width: 20px;
+}
+
+#left
+{
+    left: 0;
+}
+
+#right
+{
+    right: 0;
+}
+
+#top, #bottom
+{
+    left: 0; right: 0;
+    height: 20px;
+}
+
+#top
+{
+    top: 0;
+}
+
+#bottom
+{
+    bottom: 0;
+}
+
+.BlacktblHead
+{
+    background-color: gray;
+}
+
+.SiteLabel
+{
+    background-color: gray;
+    color: red;
+}
+
+body
+{
+    background-color: #FFFFFF;
+    font-family: "Comic Sans MS", Tahoma, Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+    margin: 20px;
+    padding-bottom: 50px;
+}
+
+textarea
+{
+    font-family: "Comic Sans MS", Tahoma, Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+    margin: 5px;
+}
+
+ul.nav
+{
+    line-height: 35px;
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    font-size:18px;
+    font-family: Arial, Verdana, Helvetica, sans-serif, "Times New Roman", Times, serif;
+}
+
+ul.nav li
+{
+    display: inline;
+    border: 1px dashed black;
+    border-bottom: none;
+    padding: 5px 5px 1px 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    background-color: gray;
+    color: white;
+}
+
+ul.nav li.HL a
+{
+    background-color: #b22222;
+    color: white;
+}
+
+td.login, a.login
+{
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+}
+
+td.Profile, a.Profile
+{
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    font-size: 14px;
+    text-align: right;
+}
+
+a.NLSignupHead
+{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    background-color: red;
+    display: inline-block;
+    padding: 8px 10px;
+    text-shadow: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid red;
+    position:absolute;
+    right:30px;
+    top: 75px;
+}
+
+a.NLSignup
+{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+    background-color: gray;
+    display: inline-block;
+    padding: 8px 10px;
+    text-shadow: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid black;
+}
+
+a.MapButton
+{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: Black;
+    background-color: White;
+    display: inline-block;
+    padding: 8px 10px;
+    text-shadow: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid black;
+}
+
+a.NavButton
+{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: White;
+    background-color: gray;
+    display: inline-block;
+    padding: 8px 10px;
+    text-shadow: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid black;
+}
+
+table.Admin
+{
+    border-width: 1px;
+    border-style: hidden;
+    border-color: black;
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-collapse:collapse;
+}
+
+td.Admin
+{
+    vertical-align:top;
+    text-align: center;
+    border-width: 1px;
+    border-style: hidden;
+    border-color: black;
+}
+
+table.Calendar
+{
+    border-width: 1px;
+    border-style: solid ;
+    border-color: black;
+    width:91%;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+    border-collapse:collapse;
+}
+
+td.ReviewLinks
+{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+th.Calendar
+{
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    font-size: 16px;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
+
+td.Calendar
+{
+    height:65px;
+    vertical-align:top;
+    width:13%;
+    font-size: 12px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.CalDay
+{
+    font-size: 14px;
+    color: black;
+    font-weight:bold;
+}
+
+.CalClosed
+{
+    font-size: 14px;
+    color: firebrick;
+    font-weight:bold;
+}
+
+ul.PL
+{
+  list-style-position: inside;
+  text-align:center;
+}
+
+p.AddrBlock
+{
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-right-style: double;
+    border-left-style: double;
+    border-bottom-style: double;
+    border-top-style: double;
+    border-right-color: red;
+    border-left-color: red;
+    border-bottom-color: red;
+    border-top-color: red;
+    width: 3in;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+td.Welcome
+{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: gray;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: right;
+}
+
+table.RightRedLine
+{
+    border-collapse: collapse;
+    border-right-style: hidden;
+}
+
+td.RightRedLine
+{
+    border-right-style: solid;
+    border-right-color: red;
+    border-right-width: 1px;
+    height: 20px;
+    line-height: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+ul.nav a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: grey;
+}
+
+ul.nav a:visited
+{
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+}
+
+ul.nav a:hover {
+    color: black;
+    text-decoration: none;
+    background-color: #c0c0c0;
+    font-weight:normal;
+}
+
+.FooterMenu {
+	font-size: 12px;
+	font-weight:500;
+}
+
+.FooterMenu a:link {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.FooterMenu a:visited {
+  color: black;
+  text-decoration: underline;
+}
+
+.FooterMenu a:hover {
+    color: white;
+    text-decoration: none;
+    background: #b22222;
+    font-weight:900;
+    font-style: italic;
+}
+
+.FooterMenu a:active {
+    color: #9999CC;
+    text-decoration: none;
+    background: #FFFFFF;
+    font-weight:600;
+ }
+
+.footer
+{
+    font-size: 12px;
+    font-weight: normal;
+    padding-left:  40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    background: gray;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer a
+{
+    color: white;
+}
+
+.footer a:visited
+{
+    color: white;
+}
+
+.footer a:hover
+{
+    text-decoration: none;
+    background-color: gray;
+}
+
+.Header {
+    background-color: gray;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.WHeader {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+    color: white;
+}
+
+.Header1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+}
+
+.SubHeader1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    /*margin: 5px;*/
+    position: relative;
+    top: -20px;
+}
+
+.Header2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+}
+
+.MMH2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px;
+  margin-top: 25px;
+}
+
+.Submit
+{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Header3 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-left: 15px;
+}
+
+.Header3C {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Header4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.SubHead {
+    text-align: center;
+    background-color: gray;
+    /*height: 40px;*/
+    position: relative;
+    top: -20px;
+}
+
+.SubHead2 {
+    text-align: center;
+    background-color: gray;
+    position: relative;
+    top: -40px;
+}
+
+.ClassName
+{
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+td.ClassNote
+{
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    top: -10px;
+}
+
+td.DayClassNote
+{
+    font-style: italic;
+    padding-top: 16px;
+}
+
+.DOW
+{
+    font-weight: bold;
+    font-variant: small-caps;
+    padding-top: 16px;
+    color: red;
+    text-decoration : underline;
+}
+
+.CancelledClass
+{
+    text-decoration: line-through;
+}
+
+table.ClassListing
+{
+    border-spacing: 15px 5px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+th.OutlineCenter
+{
+  margin: auto;
+  border-style: ridge;
+  border-width: thin;
+  border-collapse: collapse;
+  background-color: darkgrey;
+  padding: 10px;
+}
+
+table.OutlineCenter, td.OutlineCenter
+{
+  margin: auto;
+  border-style: ridge;
+  border-width: thin;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+tr.OutlineCenter:nth-child(even)
+{
+  background-color: beige;
+}
+
+.center
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CenterBox
+{
+  width: 500px;
+  margin: auto;
+}
+
+.CenterBoxLarge {
+  width: 1100px;
+  margin: auto;
+}
+
+.SmallCenterBox {
+  width: 250px;
+  margin: auto;
+}
+
+textarea.LargeArea
+{
+  width: 1100px;
+  height: 200px;
+}
+
+.LinkCategoryHeader
+{
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    margin-left: 10px;
+}
+
+.AdminCategoryHeader
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+}
+
+.BlueNote
+{
+    font-size: 20px;
+    text-align: center;
+    color: #0000FF;
+    font-weight: 700;
+    margin: 5px;
+}
+
+.lbl
+{
+    font-size:16px;
+    color: black;
+    font-weight:bold;
+}
+
+.lblright
+{
+    font-size:16px;
+    color: black;
+    font-weight:bold;
+    text-align: right;
+}
+
+.Error
+{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #FF0000;
+    text-align: center;
+}
+
+.Attn
+{
+    font-size: 15px;
+    font-weight: bolder;
+    color: red;
+    background-color: white;
+}
+
+.LargeAttnCenter
+{
+    font-size: 24px;
+    font-weight: bolder;
+    color: red;
+    text-align: center;
+}
+
+.BlueAttn
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: #0000FF;
+    text-align: center;
+}
+
+.MainText
+{
+    font-size:14px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.MainTextCenter
+{
+    font-size:16px;
+    text-align: center;
+}
+
+.TextCenterScreen
+{
+  font-size: 14px;
+  margin: auto;
+}
+
+.ClassDescr{
+    font-size: 14px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.LDT_Text{
+    font-size: large;
+    margin: 10px;
+    margin-right: 40px;
+    text-align: center;
+    line-height: 130%;
+}
+
+.LDT_NewFloor{
+    font-size: medium;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    font-weight: bold;
+    background-color: yellow;
+    border-color: black;
+    border-width: thin;
+    border-style: solid;
+    padding: 10px;
+}
+
+.LDT_DateTimeHead{
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+    background-color: lightgray;
+    border-color: black;
+    border-width: thin;
+    border-style: none;
+    padding: 10px;
+}
+
+table.LDT_Dates, td.LDT_Dates{
+    border-color: black;
+    border-width: thin;
+    border-style: solid;
+    border-collapse: collapse;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.LDT_Loc{
+    border-color: black;
+    border-style: double;
+    padding: 10px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    line-height: 160%;
+}
+
+.LDT_Contact{
+    text-align: center;
+    font-size: large;
+}
+
+.LDT_Name{
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+    line-height: 160%;
+}
+
+.LDT_info{
+    font-size: medium;
+}
