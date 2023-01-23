@@ -37,6 +37,18 @@
     printPg("Decrypted: $strDecrypted","center");
     $strGUID = guid();
     printPg("GUID: $strGUID","note");
+    $strQuery = "INSERT INTO tblSecrets (vcGUID, vcSecret, dtExpiration) VALUES ('$strGUID', '$strEncrypted', '$strExpDate');";
+    printPg("Page: $strPageURL");
+    $strFetchURL = $strProto . $strHost . "/fetch.php?id=$strGUID&pwd=$strKey";
+    if (UpdateSQL($strQuery,"insert"))
+    {
+      printPg("Your secret has be stored securely. It can be fetch exactly one time before $strExpDate at $strFetchURL","note");
+      printPg("After that date or after it has been viewed one time, it will be permanently deleted","note");
+    }
+    else
+    {
+      printPg("Saving to database failed, sorry about that. Please try again or contact support@supergeek.us");
+    }
   }
   else
   {

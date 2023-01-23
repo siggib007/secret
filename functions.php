@@ -143,8 +143,6 @@
   {
     $DefaultDB = $GLOBALS["DefaultDB"];
     $dbh = $GLOBALS["dbh"];
-    $SupportEmail = $GLOBALS["SupportEmail"];
-    $FromEmail = $GLOBALS["FromEmail"];
 
     try
     {
