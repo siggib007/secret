@@ -34,12 +34,16 @@
     $strEncrypted = StringEncrypt($strSecret,$strKey);
     $strGUID = guid();
     $strQuery = "INSERT INTO tblSecrets (vcGUID, vcSecret, dtExpiration) VALUES ('$strGUID', '$strEncrypted', '$strExpDate');";
-    $strFetchURL = $strProto . $strHost . "/fetch.php?id=$strGUID&pwd=$strKey";
+    $strFetchURL = $strProto . $strHost . "/fetch.php";
+    $strFetchURLid = "$strFetchURL?id=$strGUID&pwd=$strKey";
     if (UpdateSQL($strQuery,"insert"))
     {
       printPg("Your secret has be stored securely. It can be fetch exactly one time before $strExpDate at","note");
-      printPg("$strFetchURL","center");
+      printPg("$strFetchURL<br>\nwith ID=$strGUID<br>\nand PWD=$strKey","box");
       printPg("After that date or after it has been viewed one time, it will be permanently deleted","note");
+      printPg("It can also be fetched with the following single URL","note");
+      printPg("WARNING!!! All messaging services that preview links will trigger a deletion on the URL below!!","alert");
+      printPg("$strFetchURLid","center");
     }
     else
     {

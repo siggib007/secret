@@ -30,7 +30,13 @@
 
   if ($strKey == "" || $strGUID == "")
   {
-    printPg("Invalid link","error");
+    print "<div class=\"MainTextCenter\"><form method=\"get\">\n";
+    print "<label for=\"txtID\">&nbsp;&nbsp;&nbsp;ID:</label>\n";
+    print "<input type=\"text\" id=\"txtID\" value=\"$strGUID\" name=\"id\" size=\"75\" >\n<br>\n";
+    print "<label for=\"txtKey\">PWD:</label>\n";
+    print "<input type=\"text\" id=\"txtKey\" value=\"$strKey\" name=\"pwd\" size=\"75\" >\n<br>\n";
+    print "<input type=\"Submit\" value=\"Submit\" name=\"btnSubmit\">";
+    print "</form>\n</div>\n";
   }
   else
   {

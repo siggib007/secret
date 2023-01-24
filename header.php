@@ -38,5 +38,23 @@
   print "</td>\n";
   print "</tr>\n";
   print "</table>\n";
+  print "<ul class=\"nav\">\n";
+  if ($strURI == "/index.php" or $strURI == "/")
+  {
+    print "<li class=\"HL\"><a href=\"index.php\">Home</a></li>\n";
+  }
+  else
+  {
+    print "<li class=\"Norm\"><a href=\"index.php\">Home</a></li>\n";
+  }
+  if ($strURI == "/fetch.php")
+  {
+    print "<li class=\"HL\"><a href=\"fetch.php\">Fetch</a></li>\n";
+  }
+  else
+  {
+    print "<li class=\"Norm\"><a href=\"fetch.php\">Fetch</a></li>\n";
+  }
+  print "</ul>\n";
   print "</div>\n</div>\n";
 ?>

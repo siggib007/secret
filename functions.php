@@ -38,6 +38,9 @@
       case "tmh2":
         print "<p class=\"MMH2\">$strMsg</p>\n";
         break;
+      case "box":
+        print "<p class=\"CenterBoxLarge\">$strMsg</p>\n";
+        break;
       default:
         error_log("unkown type $strType in printpg, printing as maintext");
         print "<p class=\"MainText\">$strMsg</p>\n";
