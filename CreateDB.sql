@@ -8,7 +8,7 @@ CREATE TABLE `tblSecrets` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 GRANT
-    USAGE ON `phpSecrets`.* TO `phpsecret` @`localhost` IDENTIFIED BY PASSWORD 'SetStrongPassword2!!!!'
+    USAGE ON `phpSecrets`.* TO `phpsecret` @`localhost` IDENTIFIED BY PASSWORD 'SetStrongPassword2!!!!';
 GRANT
   SELECT,
   INSERT,
@@ -20,4 +20,9 @@ GRANT
   SHOW
   VIEW,
   TRIGGER
-  ON `phpSecrets`.* TO `phpsecret` @`localhost`
+  ON `phpSecrets`.* TO `phpsecret` @`localhost`;
+
+CREATE USER
+    'expirescript' @'localhost' IDENTIFIED BY PASSWORD 'AnotherStrongPassword!!';
+
+GRANT DELETE ON phpSecrets.tblSecrets TO 'expirescript'@'localhost';
