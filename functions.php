@@ -196,7 +196,7 @@
   function CleanSQLInput($InVar)
   {
     $InVar = str_replace("\\","",$InVar);
-    $InVar = str_replace("'","\'",$InVar);
+    $InVar = str_replace("'","",$InVar);
     $InVar = str_replace(";","",$InVar);
     return $InVar;
   }

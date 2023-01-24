@@ -21,7 +21,7 @@
 
   if (isset($_GET['pwd']))
 	{
-    $strKey = CleanSQLInput ($_GET['pwd']);
+    $strKey = $_GET['pwd'];
 	}
 	else
 	{
@@ -36,7 +36,7 @@
   {
     $strQuery = "SELECT vcSecret FROM tblSecrets WHERE vcGUID = '$strGUID'";
     $strSecret = GetSQLValue($strQuery);
-    if($strSecret == "" || $strSecret == 0)
+    if($strSecret == "")
     {
       printPg("Link does not exist","error");
     }
@@ -45,6 +45,8 @@
       $strDecrypt = StringDecrypt($strSecret,$strKey);
       printPg("Here is your secret","h1");
       printPg("$strDecrypt","note");
+      $strQuery = "DELETE FROM tblSecrets WHERE vcGUID = '$strGUID'";
+      UpdateSQL($strQuery,"Delete");
     }
   }
 
