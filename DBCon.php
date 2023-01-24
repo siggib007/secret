@@ -102,5 +102,5 @@
   $strPageURL = $strProto . $strHost . $strURI;
   $PostVarCount = count($_POST);
   $dtNow = date('Y-m-d H:i:s');
-
+  $strPageName = $_SERVER['PHP_SELF'];
 ?>

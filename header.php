@@ -39,7 +39,7 @@
   print "</tr>\n";
   print "</table>\n";
   print "<ul class=\"nav\">\n";
-  if ($strURI == "/index.php" or $strURI == "/")
+  if ($strPageName == "/index.php")
   {
     print "<li class=\"HL\"><a href=\"index.php\">Home</a></li>\n";
   }
@@ -47,7 +47,7 @@
   {
     print "<li class=\"Norm\"><a href=\"index.php\">Home</a></li>\n";
   }
-  if ($strURI == "/fetch.php")
+  if ($strPageName == "/fetch.php")
   {
     print "<li class=\"HL\"><a href=\"fetch.php\">Fetch</a></li>\n";
   }
