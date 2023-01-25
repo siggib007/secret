@@ -91,6 +91,15 @@
   {
     $strReferer = "";
   }
+  if(isset($_SERVER["HTTP_USER_AGENT"]))
+  {
+    $strAgent = $_SERVER["HTTP_USER_AGENT"];
+  }
+  else
+  {
+    $strAgent = "";
+  }
+
   if(isset($_SERVER["HTTPS"]))
   {
     $strProto = "https://";

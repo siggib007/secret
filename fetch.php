@@ -10,6 +10,12 @@
 
   require("header.php");
 
+  error_log("Agent: $strAgent - ref: $strReferer");
+  if ($strAgent == "ViberUrlDownloader")
+  {
+    print("Fetch your secret here");
+    exit;
+  }
   if (isset($_GET['id']))
 	{
     $strGUID = CleanSQLInput ($_GET['id']);
