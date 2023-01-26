@@ -269,6 +269,7 @@
     $Options = 0;
     return openssl_encrypt($strInput,$CipherRing,$strKey,$Options,$strEncrIV);
   }
+
   function StringDecrypt($strInput,$strKey)
   {
     $strEncrIV = $GLOBALS["strEncrIV"];
@@ -277,6 +278,7 @@
     $Options = 0;
     return openssl_decrypt($strInput,$CipherRing,$strKey,$Options,$strEncrIV);
   }
+
   function guid()
   {
     if (function_exists('com_create_guid') === true)
@@ -288,4 +290,17 @@
     return vsprintf('%s%s-%s-%s-%s-%s%s%s', str_split(bin2hex($data), 4));
   }
 
+  function isPreview()
+  {
+    $strAgent = $GLOBALS["strAgent"];
+    $arrPreviewers = array("WhatsApp","Viber","Discord","Google-PageRenderer","LinkedInBot","Slackbot","LinkExpanding","Twitterbot");
+    foreach ($arrPreviewers as $key)
+    {
+      if (stripos($strAgent,$key) !== false)
+      {
+        return true;
+      }
+    }
+    return false;
+  }
 ?>

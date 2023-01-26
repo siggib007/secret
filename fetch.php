@@ -10,15 +10,17 @@
 
   require("header.php");
 
-  error_log("Agent: $strAgent - ref: $strReferer");
-  if ($strAgent == "ViberUrlDownloader")
+  error_log("Agent: $strAgent");
+  if (isPreview())
   {
+    error_log("Blocked a preview");
     print("Fetch your secret here");
     exit;
   }
   if (isset($_GET['id']))
 	{
     $strGUID = CleanSQLInput ($_GET['id']);
+    error_log("ID: $strGUID");
 	}
 	else
 	{
