@@ -10,34 +10,38 @@
 
   require("header.php");
 
-  error_log("Agent: $strAgent");
-  if (isPreview())
-  {
-    error_log("Blocked a preview");
-    print("Fetch your secret here");
-    exit;
-  }
-  if (isset($_GET['id']))
+  if (isset($_GET["id"]))
 	{
-    $strGUID = CleanSQLInput ($_GET['id']);
-    error_log("ID: $strGUID");
+    $strGUID = CleanSQLInput ($_GET["id"]);
 	}
 	else
 	{
     $strGUID = "";
 	}
 
-  if (isset($_GET['pwd']))
+  if (isset($_GET["pwd"]))
 	{
-    $strKey = $_GET['pwd'];
+    $strKey = $_GET["pwd"];
 	}
 	else
 	{
     $strKey = "";
 	}
 
-  if ($strKey == "" || $strGUID == "")
+  if (isset($_GET["btnSubmit"]))
+	{
+    $strBtn = $_GET["btnSubmit"];
+	}
+	else
+	{
+    $strBtn = "";
+	}
+
+
+  if ($strBtn != "Submit")
   {
+    printPg("Click submit to see the secret that was sent to you","note");
+    printPg("WARNING!!!! Once you view the secret it is deleted. Once you refresh the screen or close the tab the secret is irretrievable lost","alert");
     print "<div class=\"MainTextCenter\"><form method=\"get\">\n";
     print "<label for=\"txtID\">&nbsp;&nbsp;&nbsp;ID:</label>\n";
     print "<input type=\"text\" id=\"txtID\" value=\"$strGUID\" name=\"id\" size=\"75\" >\n<br>\n";

@@ -42,7 +42,6 @@
       printPg("$strFetchURL<br>\nwith ID=$strGUID<br>\nand PWD=$strKey","box");
       printPg("After that date or after it has been viewed one time, it will be permanently deleted","note");
       printPg("It can also be fetched with the following single URL","note");
-      printPg("WARNING!!! All messaging services that preview links will trigger a deletion on the URL below!!","alert");
       printPg("$strFetchURLid","center");
     }
     else
