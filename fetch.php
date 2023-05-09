@@ -42,6 +42,7 @@
   {
     printPg("Click submit to see the secret that was sent to you","note");
     printPg("WARNING!!!! Once you view the secret it is deleted. Once you refresh the screen or close the tab the secret is irretrievable lost","alert");
+    printPg("WARNING!!!! This screen will automatically refresh in 10 minutes","alert");
     print "<div class=\"MainTextCenter\"><form method=\"get\">\n";
     print "<label for=\"txtID\">&nbsp;&nbsp;&nbsp;ID:</label>\n";
     print "<input type=\"text\" id=\"txtID\" value=\"$strGUID\" name=\"id\" size=\"75\" >\n<br>\n";
