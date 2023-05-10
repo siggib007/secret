@@ -15,7 +15,7 @@
   set_time_limit(30);
   $DevEnvironment = getenv("DEVENV");
   $ROOTPATH = "/";
-  $RefreshMin = 5;
+  $RefreshMin = 1;
   $RefreshSec = $RefreshMin * 60;
   $HeadImg  ="ShareASecret.png";
   $CSSName  = "SiteStyle.css";
