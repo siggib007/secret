@@ -11,7 +11,7 @@ function startTimer(duration, display) {
     display.textContent = minutes + ":" + seconds;
 
     if (--timer < 0) {
-      timer = duration;
+      window.location.replace("/index.php");;
     }
   }, 1000);
 }
@@ -19,5 +19,15 @@ function startTimer(duration, display) {
 window.onload = function () {
   var display = document.querySelector('#time'),
     iSeconds = 60 * display.textContent;
-  startTimer(iSeconds-4, display);
+  startTimer(iSeconds, display);
+};
+
+window.addEventListener('focus', function () {
+  location.reload();
+});
+
+window.onpageshow = function (event) {
+  if (event.persisted) {
+    window.location.reload()
+  }
 };

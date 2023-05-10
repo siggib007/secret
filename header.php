@@ -19,8 +19,8 @@
   print "<title>ShareASecret</title>\n";
   if ($strPageName == "/fetch.php")
   {
-    print "<meta http-equiv=\"refresh\" content=\"$RefreshSec;url='/index.php'\">\n";
     print "<meta http-equiv=\"cache-control\" content=\"max-age=0\">\n";
+    print "<meta http-equiv=\"cache-control\" content=\"no-store\">\n";
     print "<meta http-equiv=\"cache-control\" content=\"must-revalidate\">\n";
     print "<meta http-equiv=\"cache-control\" content=\"no-cache\">\n";
     print "<meta http-equiv=\"expires\" content=\"-1\">\n";
