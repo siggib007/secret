@@ -641,6 +641,7 @@ textarea.LargeArea
     font-weight: bolder;
     color: red;
     background-color: white;
+    text-align: center;
 }
 
 .LargeAttnCenter

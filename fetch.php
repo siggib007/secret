@@ -63,10 +63,10 @@
       $strDecrypt = StringDecrypt($strSecret,$strKey);
       printPg("Here is your secret","h1");
       $strMsg = str_replace("\n","<br>\n",$strDecrypt);
-      printPg("$strMsg","note");
+      printPg("$strMsg","box");
       $strQuery = "DELETE FROM tblSecrets WHERE vcGUID = '$strGUID'";
       UpdateSQL($strQuery,"Delete");
-      printPg("<br>This message will self destruct in <span id=\"time\">$RefreshMin</span> minutes, or as soon as you close this tab or navigate away<br>\n","note");
+      printPg("<br>This message will self destruct in <span id=\"time\">$RefreshMin</span> minutes, or as soon as you close this tab or navigate away<br>\n","attn");
     }
   }
   print "<script type=\"text/javascript\" src=\"/timer.js\"></script>";
