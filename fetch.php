@@ -41,8 +41,7 @@
   if ($strBtn != "Submit")
   {
     printPg("Click submit to see the secret that was sent to you","note");
-    printPg("WARNING!!!! Once you view the secret it is deleted. Once you refresh the screen or close the tab the secret is irretrievable lost","alert");
-    printPg("WARNING!!!! This screen will automatically refresh in 10 minutes","alert");
+    printPg("WARNING!!!! Once you view the secret it is deleted, the message will self destruct from your screen $RefreshMin minutes after viewing","alert");
     print "<div class=\"MainTextCenter\"><form method=\"get\">\n";
     print "<label for=\"txtID\">&nbsp;&nbsp;&nbsp;ID:</label>\n";
     print "<input type=\"text\" id=\"txtID\" value=\"$strGUID\" name=\"id\" size=\"75\" >\n<br>\n";
@@ -63,11 +62,13 @@
     {
       $strDecrypt = StringDecrypt($strSecret,$strKey);
       printPg("Here is your secret","h1");
-      printPg("$strDecrypt","note");
+      $strMsg = str_replace("\n","<br>\n",$strDecrypt);
+      printPg("$strMsg","note");
       $strQuery = "DELETE FROM tblSecrets WHERE vcGUID = '$strGUID'";
       UpdateSQL($strQuery,"Delete");
+      printPg("<br>This message will self destruct in <span id=\"time\">$RefreshMin</span> minutes, or as soon as you close this tab or navigate away<br>\n","note");
     }
   }
-
+  print "<script type=\"text/javascript\" src=\"/timer.js\"></script>";
   require("footer.php");
 ?>

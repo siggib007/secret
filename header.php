@@ -17,13 +17,16 @@
   print "<html>\n";
   print "<head>\n";
   print "<title>ShareASecret</title>\n";
-  print "<meta http-equiv=\"refresh\" content=\"600\">\n";
-  print "<meta http-equiv=\"cache-control\" content=\"max-age=0\">\n";
-  print "<meta http-equiv=\"cache-control\" content=\"must-revalidate\">\n";
-  print "<meta http-equiv=\"cache-control\" content=\"no-cache\">\n";
-  print "<meta http-equiv=\"expires\" content=\"-1\">\n";
-  print "<meta http-equiv=\"expires\" content=\"Tue, 01 Jan 1980 11:00:00 GMT\">\n";
-  print "<meta http-equiv=\"pragma\" content=\"no-cache\">\n";  
+  if ($strPageName == "/fetch.php")
+  {
+    print "<meta http-equiv=\"refresh\" content=\"$RefreshSec;url='/index.php'\">\n";
+    print "<meta http-equiv=\"cache-control\" content=\"max-age=0\">\n";
+    print "<meta http-equiv=\"cache-control\" content=\"must-revalidate\">\n";
+    print "<meta http-equiv=\"cache-control\" content=\"no-cache\">\n";
+    print "<meta http-equiv=\"expires\" content=\"-1\">\n";
+    print "<meta http-equiv=\"expires\" content=\"Tue, 01 Jan 1980 11:00:00 GMT\">\n";
+    print "<meta http-equiv=\"pragma\" content=\"no-cache\">\n";
+  }
   print "<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"favicon.ico\">\n";
   print "<link href=\"$CSSName\" rel=\"stylesheet\" type=\"text/css\">\n";
   print "</head>\n";

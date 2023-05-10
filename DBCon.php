@@ -11,11 +11,12 @@
 
   require_once("functions.php");
 
-  // default_charset = "utf-8";
   ini_set( "default_charset", "UTF-8" );
   set_time_limit(30);
   $DevEnvironment = getenv("DEVENV");
   $ROOTPATH = "/";
+  $RefreshMin = 5;
+  $RefreshSec = $RefreshMin * 60;
   $HeadImg  ="ShareASecret.png";
   $CSSName  = "SiteStyle.css";
   $ErrMsg   = "We seem to be experiencing some technical difficulties, " .
