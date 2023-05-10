@@ -21,13 +21,3 @@ window.onload = function () {
     iSeconds = 60 * display.textContent;
   startTimer(iSeconds, display);
 };
-
-window.addEventListener('focus', function () {
-  location.reload();
-});
-
-window.onpageshow = function (event) {
-  if (event.persisted) {
-    window.location.reload()
-  }
-};
