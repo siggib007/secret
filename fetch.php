@@ -66,7 +66,8 @@
       printPg("$strMsg","box");
       $strQuery = "DELETE FROM tblSecrets WHERE vcGUID = '$strGUID'";
       UpdateSQL($strQuery,"Delete");
-      printPg("<br>This message will self destruct in <span id=\"time\">$RefreshMin</span> minutes, or as soon as you close this tab or navigate away<br>\n","attn");
+      printPg("<br>This message will self destruct in <span id=\"time\">$RefreshMin</span> minutes, or as soon as you close this tab<br>\n","attn");
+      printPg("Make sure you close this tab as soon as you are done capturing the secret to enhance the security of the secret.","attn");
     }
   }
   print "<script type=\"text/javascript\" src=\"/timer.js\"></script>";
