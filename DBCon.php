@@ -16,12 +16,15 @@
   $DevEnvironment = getenv("DEVENV");
   $ROOTPATH = "/";
   $RefreshMin = 1;
+  $CompanyName = "SuperGeek";
+  $SupportEmail = "support@supergeek.us";
+  $DefExpire = 7;
   $RefreshSec = $RefreshMin * 60;
   $HeadImg  ="ShareASecret.png";
   $CSSName  = "SiteStyle.css";
   $ErrMsg   = "We seem to be experiencing some technical difficulties, " .
             "hopefully we'll have it resolved shortly.<br>" .
-            "If you have any questions please contact us at support@supergeek.us";
+            "If you have any questions please contact us at $SupportEmail";
 
   # All Environment and secret vars are specified in ExtVars.php
   # Follow instruction there on how to adjust.
