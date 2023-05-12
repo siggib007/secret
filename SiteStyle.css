@@ -50,14 +50,14 @@
 body
 {
     background-color: #FFFFFF;
-    font-family: "Comic Sans MS", Tahoma, Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+    font-family: Tahoma, Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
     margin: 20px;
     padding-bottom: 50px;
 }
 
 textarea
 {
-    font-family: "Comic Sans MS", Tahoma, Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
+    font-family: Tahoma, Arial, Helvetica, sans-serif, "Times New Roman", Times, serif;
     margin: 5px;
 }
 

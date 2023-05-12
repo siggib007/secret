@@ -41,6 +41,9 @@
       case "box":
         print "<p class=\"CenterBox\">$strMsg</p>\n";
         break;
+      case "largebox":
+        print "<p class=\"CenterBoxLarge\">$strMsg</p>\n";
+        break;
       default:
         error_log("unkown type $strType in printpg, printing as maintext");
         print "<p class=\"MainText\">$strMsg</p>\n";
