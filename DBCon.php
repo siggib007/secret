@@ -18,6 +18,8 @@
   $RefreshMin = 1;
   $CompanyName = "SuperGeek";
   $SupportEmail = "support@supergeek.us";
+  $HomeURL = "https://supergeek.us";
+  $Copyright = "Siggi Bjarnason";
   $DefExpire = 7;
   $RefreshSec = $RefreshMin * 60;
   $HeadImg  ="ShareASecret.png";

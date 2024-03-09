@@ -11,8 +11,8 @@
 	print "<center>\n";
 
 	print "<p class=\"footer\">\n|&nbsp;&nbsp;";
-  print "&nbsp;&nbsp;Copyright &copy; 2023 <a href=\"http://www.supergeek.us\" target=\"_blank\">"
-  . "Siggi Bjarnason</a>&nbsp;&nbsp;|\n";
+  print "&nbsp;&nbsp;Copyright &copy; 2023 <a href=\"$HomeURL\" target=\"_blank\">"
+  . "$Copyright</a>&nbsp;&nbsp;|\n";
 	print "&nbsp;&nbsp;Your IP is $strRemoteIP $strHost&nbsp;&nbsp;|\n";
 	print "</p>\n";
 	print "</center>\n";

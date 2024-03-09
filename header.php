@@ -49,7 +49,7 @@
   print "</tr>\n";
   print "</table>\n";
   print "<ul class=\"nav\">\n";
-  print "<li class=\"Norm\"><a href=\"https://oruggtnet.is\">Home</a></li>\n";
+  print "<li class=\"Norm\"><a href=\"$HomeURL\">Home</a></li>\n";
   if ($strPageName == "/index.php")
   {
     print "<li class=\"HL\"><a href=\"index.php\">Enter Secret</a></li>\n";
