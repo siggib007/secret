@@ -49,21 +49,30 @@
   print "</tr>\n";
   print "</table>\n";
   print "<ul class=\"nav\">\n";
+  print "<li class=\"Norm\"><a href=\"https://oruggtnet.is\">Home</a></li>\n";
   if ($strPageName == "/index.php")
   {
-    print "<li class=\"HL\"><a href=\"index.php\">Home</a></li>\n";
+    print "<li class=\"HL\"><a href=\"index.php\">Enter Secret</a></li>\n";
   }
   else
   {
-    print "<li class=\"Norm\"><a href=\"index.php\">Home</a></li>\n";
+    print "<li class=\"Norm\"><a href=\"index.php\">Enter Secret</a></li>\n";
   }
   if ($strPageName == "/fetch.php")
   {
-    print "<li class=\"HL\"><a href=\"fetch.php\">Fetch</a></li>\n";
+    print "<li class=\"HL\"><a href=\"fetch.php\">Fetch Secret</a></li>\n";
   }
   else
   {
-    print "<li class=\"Norm\"><a href=\"fetch.php\">Fetch</a></li>\n";
+    print "<li class=\"Norm\"><a href=\"fetch.php\">Fetch Secret</a></li>\n";
+  }
+  if ($strPageName == "/Docs.php")
+  {
+    print "<li class=\"HL\"><a href=\"docs.php\">Documentation</a></li>\n";
+  }
+  else
+  {
+    print "<li class=\"Norm\"><a href=\"docs.php\">Documentation</a></li>\n";
   }
   print "</ul>\n";
   print "</div>\n</div>\n";

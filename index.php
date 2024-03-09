@@ -52,9 +52,10 @@
   else
   {
     printpg("$CompanyName Secret Sharing","h1");
-    printpg("To share something sensitive, enter it in the text box, select expiration, and click submit. " .
+    printpg("To share something sensitive, for example a password, API key, etc., enter it in the text box, select expiration, and click submit. " .
     "The text will be encrypted using strongest possible encryption and stored in a database. " .
     "You'll get URL back that allows someone to retrieve it exactly once then it is permanently deleted.","largebox");
+    printpg("For more details see the documentation tab","largebox");
     print "<div class=\"MainTextCenter\"><form method=\"POST\">\n";
     print "<textarea name=\"txtSecret\" rows=\"5\" cols=\"70\"></textarea>\n<br>\n";
     print "<label for=\"expiration\">Expires after number of days (between 1 and 14):</label>\n";

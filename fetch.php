@@ -54,9 +54,10 @@
   {
     $strQuery = "SELECT vcSecret FROM tblSecrets WHERE vcGUID = '$strGUID'";
     $strSecret = GetSQLValue($strQuery);
-    if($strSecret == "")
+    error_log("Secret: $strSecret");
+    if($strSecret == "" or $strSecret == 0)
     {
-      printPg("Link does not exist","error");
+      printPg("ID does not exist","error");
     }
     else
     {
